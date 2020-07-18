@@ -1,0 +1,8 @@
+@charset "UTF-8";
+img {display:none;}
+main {background-image:none;}
+main div {flex:1
+ background-color:transparent;}
+h1 {color:black}
+button{display:none;}
+p {color:black}

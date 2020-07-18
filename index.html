@@ -1,19 +1,26 @@
 <!doctype html>
-<html lang="zxx" >
+<html lang="zxx">
 <head>
 <meta charset="utf-8">
-<link rel='stylesheet' href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
 <title>Spring Flowers Bloom</title>
 <meta name= "viewport" content="width=device-width,inital-scale=1,scalable=yes">
+<link rel="stylesheet" href="css/print.css" media= "print">
 </head>
 
-<body>
+<body onload="document.getElementById('greet').innerHTML ='Welcome,'+ prompt('whats your name?')">
 	<header>
-	<h1>Spring Flowers Bloom</h1>
+
+<div>
+		<img src="images/logo.png" alt="logo"> <h1>Spring Flowers Bloom</h1>
+
+  <button type="button" onclick="document.getElementById('modal').setAttribute('class','modal_on')">Are Plants Cool?</button>
+
+</div>
 	<nav>
 		<ul>
 			<li><a href="#">Flowers</a></li>
-			<li><a href="#">About Us</a></li>
+			<li><a href ="#">About Us</a></li>
 			<li><a href="#">Gardening</a></li>
 			<li><a href="#">Tips & Tricks</a></li>
 			<li><a href="#"> Contact Us</a></li>
@@ -26,31 +33,39 @@
 	</div>
 
 	<section>
+<span id="greet"></span>
 		<h2>Springs Arrival</h2>
 	</section>
 	<main>
 <section>
-
 <div>
+<div onmouseover="style.backgroundColor ='#e3e1e1'"onmouseout="style.backgroundColor='inherit'">
 <img src="images/flower.jpg" alt="Flowers">
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis facilis cupiditate tenetur consequuntur modi, inventore iusto recusandae aspernatur velit, vitae, quis illo, repellendus ab. Ut aliquid repudiandae quidem nisi vero eveniet fugiat exercitationem optio architecto delectus culpa, libero adipisci totam cum corrupti asperiores officiis mollitia quis pariatur minus cupiditate. Itaque enim eius unde esse optio, possimus molestias id quasi deserunt ab! Doloremque possimus, dolor, autem similique nisi earum nam odio quis ea accusantium enim. Fugit amet voluptatum consectetur, ex aliquam autem. Ex esse ipsa, distinctio nulla ullam nostrum repudiandae dolor laudantium cum aspernatur necessitatibus aliquam, repellat sed magnam aliquid quo!</p>
 </div>
-<div>
+<div onmouseover="style.backgroundColor ='#e3e1e1'"onmouseout="style.backgroundColor='inherit'">
 <img src="images/flower2.jpg" alt="Flowers 2">
 		<p>Corporis dignissimos assumenda consequuntur hic rerum eligendi distinctio consectetur, aliquid eum. Doloremque, error porro labore delectus minima earum sunt voluptatibus, incidunt cupiditate velit vero nam eos harum est ea fuga nihil aliquid quos atque inventore maxime aliquam asperiores eveniet. Quia tenetur, ratione debitis et itaque laborum! At provident asperiores ipsam a voluptate, rem assumenda amet! Aut consequatur id consectetur voluptatibus cupiditate autem tempore, facilis explicabo! Ipsam beatae vel deleniti ipsa rerum architecto quisquam dolorum iste accusamus id voluptate suscipit laboriosam consequuntur adipisci mollitia provident, nihil ad veniam officiis ab! Hic explicabo tempora ad optio quaerat inventore, facilis quidem similique vitae!</p>
 </div>
-
-<div>
-<img src="images/flower3.jpg" alt="Flowers 3">
-
-		<p> Sunt alias fuga cupiditate blanditiis illo molestiae illum laudantium reprehenderit culpa atque ipsa quia, nulla velit, mollitia qui consectetur recusandae maiores praesentium in eligendi et! Doloremque, iste at, perferendis odit dignissimos sunt soluta velit voluptatum quis temporibus debitis adipisci, quam distinctio minima similique ducimus fuga. Nostrum velit mollitia temporibus, animi, vitae rem provident nihil laboriosam blanditiis, incidunt tenetur maxime architecto officia neque! Voluptas sed non expedita distinctio, soluta provident. Neque molestias, quidem ipsam ut provident error odio sapiente, reprehenderit vel eius, vitae, velit consectetur? Illum eos, dolorem doloribus error enim ipsum minima temporibus labore accusamus, assumenda voluptatibus odit, repudiandae dolores?</p>
+<div onmouseover="style.backgroundColor ='#e3e1e1'"onmouseout="style.backgroundColor='inherit'">
+		<img src="images/flower3.jpg" alt="Flowers 3">
+				<p>Corporis dignissimos assumenda consequuntur hic rerum eligendi distinctio consectetur, aliquid eum. Doloremque, error porro labore delectus minima earum sunt voluptatibus, incidunt cupiditate velit vero nam eos harum est ea fuga nihil aliquid quos atque inventore maxime aliquam asperiores eveniet. Quia tenetur, ratione debitis et itaque laborum! At provident asperiores ipsam a voluptate, rem assumenda amet! Aut consequatur id consectetur voluptatibus cupiditate autem tempore, facilis explicabo! Ipsam beatae vel deleniti ipsa rerum architecto quisquam dolorum iste accusamus id voluptate suscipit laboriosam consequuntur adipisci mollitia provident, nihil ad veniam officiis ab! Hic explicabo tempora ad optio quaerat inventore, facilis quidem similique vitae!</p>
+		</div>
 </div>
-</section>
-</main>
+
 	<footer>
 
-	<img src="images/logo.png" alt="logo"> <p style="color:#73947d">&copy;2020 Spring Flowers Bloom. All rights reserved.</p>
+		<div id="modal" class="modal_off" onclick="setAttribute('class','modal_off')">
+
+		<div>
+			<h3>Plants</h3>
+			<p>Of course they are.<p>
+
+		</div>
+
+		</div>
+	 <p style="color:#73947d">&copy;2020 Spring Flowers Bloom. All rights reserved.</p>
 </footer>
 </body>
 </html>
